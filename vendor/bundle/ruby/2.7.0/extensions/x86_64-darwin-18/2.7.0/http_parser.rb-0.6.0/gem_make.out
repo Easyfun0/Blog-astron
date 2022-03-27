@@ -1,0 +1,16 @@
+current directory: /Users/huangyingjie/long-haul/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/Users/huangyingjie/.rvm/rubies/ruby-2.7.2/bin/ruby -I /Users/huangyingjie/.rvm/rubies/ruby-2.7.2/lib/ruby/2.7.0 -r ./siteconf20220327-18050-11pnoml.rb extconf.rb
+creating Makefile
+
+current directory: /Users/huangyingjie/long-haul/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/huangyingjie/long-haul/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/huangyingjie/long-haul/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 ruby_http_parser.bundle ./.gem.20220327-18050-1rxazcb

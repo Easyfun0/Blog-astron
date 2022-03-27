@@ -1,17 +1,49 @@
 ---
 layout: post
-title:  "Test Post"
-date:   2014-12-10
+title:  "JS-基本介紹"
+date:   2022-03-27
 ---
 
-<p class="intro"><span class="dropcap">L</span>orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.</p>
+## JS語法介紹
 
-Bahamontes lanterne rouge normandie belgium. Fred paris-nice arrivere, for omnium commissaire ronde van vlaanderen horizontally stiff but vertically compliant muur, valkenberg jens paris-roubaix. Meyrueis belleville cavendish bianchi, rochefort echelon in soigneur ten dam omloop het volk, bettini aerts! Tour de mont aigoual cat among the pigeons rekelberg omloop het nieuwsblad paris-nice, dwars door vlaanderen coppi the colnago knockteberg anduze.
+JavaScript型別系統分為「原始型別」和「物件型別」兩大類，原始型別沒有屬性與方法
+原始型別(Primitive types)
 
-Kaperij lanterne rouge musette rund um koln bruges thor smash, geraardsbergen riis petacchi molteni pedaling squares. Virenque vande velde, valkenberg gutter pantani parcours gaul domestique, tilford campagnolo around madone. Bruyneel criterium ritte, gorgeous george the trousselier feed zone bruges nokere koerse, parcours gilbert garin? Anquetil valkenberg bettini cat among the pigeons.
+＊ number
+＊ string
+＊ boolean
+＊ null
+＊ undefined
+＊ symbol(ES6)
 
-Campagnolo the hors delai de wolf as the toto turns venga venga venga, sanchez nys. Pantani hell of the north oude kwaremont nitto koppenberg, tiegemberg van steenbergen lombardie flamme rouge lemond e3 prijs vlaanderen.
+物件型別(Object types)
+原生物件(Native)
 
-Planckaert berg ter stene freire gorgeous george in rouleur derby, vaughters fabianese omloop het volk rouleur play rouleur derby. Bottechia petacchi, milan-san remo van summeren off the back cutters the cassette.
+    ▵原始型別包裹物件(Primitive Wrapper)
+        ＊ Number
+        ＊ String
+        ＊ Boolean
 
-Nyvelocity pyrenees vande velde merckx. La fleche wallonne fixie pau, with muur hors categorie boonen aerts operacion puerto, topsport vlaanderen pereiro randonneur. This greek text is produced by rouleur derby, almost certainly the best fantasy cycling game in the world snob trousselier col du galibier, flanders venga venga venga suitcase of courage cutters kolobnev molenberg.
+    ▵ Array,Object
+    ▵ Date,Math,RegExp
+宿主物件(Host)
+
+    ◎ window(瀏覽器),global(Node.js)
+    ◎ DOM
+
+但JavaScript為了節省系統資源，原始型別在使用時會自動裝箱(boxing)形成原始型別包裹物件，使用完畢後會自動拆箱(unboxing)還原回原始型別。
+
+## 範例1.1
+
+    var str="string";
+    console.log(typeof str); //"string"
+    str.val=100;
+    console.log(str.val); //undefined
+
+使用物件型別的時候最容易搞錯的就是Number,String,Boolean 就差在第一個字母大寫
+
+    var obj = new String("string");
+    console.log(typeof obj); //"object"
+    obj.val=100;
+    console.log(obj.val); //100
+    console.log(typeof obj.valueOf()); //"string"

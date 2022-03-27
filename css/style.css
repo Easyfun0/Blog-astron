@@ -489,7 +489,7 @@ CLEAR AFTER FLOATS
 BUTTON DEFAULTS
 ***************/
 .button, .button-secondary, .button-tertiary, .button__outline {
-  background-color: seagreen;
+  background-color: #0cf;
   display: inline-block;
   position: relative;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -801,7 +801,7 @@ HEADER STYLING
 ***************/
 .header {
   background-color: seagreen;
-  background-image: url("../img/touring.jpg");
+  background-image: url("../img/S__13369365.jpg");
   background-size: cover;
   background-position: center center;
   color: white;
