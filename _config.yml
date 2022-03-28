@@ -2,8 +2,8 @@ title: Easyfun
 description: 英傑的程式之路
 
 url: 
-paginate_path: "Blog-astron/page:num/"
-permalink: Blog-astron/:title/
+paginate_path: "/Blog-astron/page:num/"
+permalink: /Blog-astron/:title/
 
 # Header Option
 # header: large
